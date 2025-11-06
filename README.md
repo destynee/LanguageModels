@@ -9,7 +9,7 @@ Is a LLM more "surprised" (assigns lower probability) when encountering stereoty
 
 ### Methodology
 **Model**: `gpt2-large` (Using `Transformers` & `PyTorch`  
-**Stimuli**: Designed minimal pairs of sentences varying only the gendered pronoun preceding stereotyped occupations (e.g., `nurse'`, `plumber`, `firefighter`).  
+**Stimuli**: Designed minimal pairs of sentences varying only the gendered pronoun preceding stereotyped occupations (e.g., `nurse`, `plumber`, `firefighter`).  
 **Metric**: Calculated Surprisal `(-log P(word | context))` for the target occupation word using functions `next_seq_prob` and `surprisal`.  
 **Analysis**: Compared surprisal values between `'Expected'` (stereotype-congruent) and `'Anomalous'` (stereotype-incongruent) conditions. The results are visualized using `Pandas`, `Matplotlib`, and `Seaborn`.
 
